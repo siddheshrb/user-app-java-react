@@ -1,11 +1,15 @@
 package com.eternity.userapi.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id
@@ -26,7 +30,7 @@ public class User {
 
     private String password;
 
-    public User() {
+    /*public User() {
     }
 
     public User(Long id, String name, String email, String password) {
@@ -34,7 +38,7 @@ public class User {
         this.name = name;
         this.email = email;
         this.password = password;
-    }
+    }*/
 
     public User(String name, String email, String password) {
         this.name = name;
