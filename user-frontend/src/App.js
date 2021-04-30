@@ -99,6 +99,8 @@ class App extends React.Component {
             </button>
           </form>
         </div>
+        </div>
+        <div className="row">
         <div className="col s6">
           <table>
             <thead>
